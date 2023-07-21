@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Kuis Matematika</title>
+  <!-- Tambahkan elemen link untuk ikon aplikasi -->
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- Tambahkan gambar header -->
+    <img src="header_matematika.png" alt="Header Matematika">
+  </header>
+  <div class="center-container">
+    <div class="container">
+      <h1>Kuis Matematika</h1>
+      <!-- Menampilkan nama pembuat aplikasi -->
+      <p class="created-by">Dibuat oleh: Ardiansyah, S.Pd</p>
+      <div class="player-info">
+        <label for="player-name">Nama Pemain:</label>
+        <input type="text" id="player-name" placeholder="Masukkan Nama">
+        <br>
+        <label for="player-password">Password:</label>
+        <input type="password" id="player-password" placeholder="Masukkan Password">
+        <button onclick="startGame()">Mulai Kuis</button>
+      </div>
+      <div class="question-box" style="display: none;">
+        <p id="question">Pertanyaan akan muncul di sini.</p>
+        <input type="number" id="answer" placeholder="Masukkan Jawaban">
+        <button onclick="checkAnswer()">Kirim</button>
+      </div>
+      <div class="score-box" style="display: none;">
+        <p id="score"></p>
+        <p id="result"></p>
+      </div>
+      <div class="answered-questions" style="display: none;">
+        <h2>Pertanyaan yang Sudah Dijawab:</h2>
+        <ul id="answered-list"></ul>
+      </div>
+      <div class="score-analysis" style="display: none;">
+        <h2>Hasil Analisis:</h2>
+        <p id="correct-count">Jawaban Benar: 0</p>
+        <p id="wrong-count">Jawaban Salah: 0</p>
+        <p id="score-percentage">Persentase Skor: 0%</p>
+      </div>
+      <footer>
+        <p>© 2023 Ardiansyah, S.Pd | Game Kuis Matematika</p>
+      </footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
